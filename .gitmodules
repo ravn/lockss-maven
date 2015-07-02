@@ -1,0 +1,3 @@
+[submodule "lockss"]
+	path = lockss
+	url = ../lockss.git
