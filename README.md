@@ -19,7 +19,7 @@ A few dependencies could not be found as-is in Maven Central.  Use
 
 to install them to your local repository.
 
-An Oracle 1.7 or OpenJDK 1.7 is required.  IBM 1.7 will not work with
+An Oracle 1.7 JDK or OpenJDK 1.7 is required (not JRE).  IBM 1.7 will not work with
 the current keystore code.
 
 Note: The antlr *.g4 files are explicitly pointed to to avoid emitting
