@@ -9,3 +9,5 @@ buildNumber.properties
 /lockss-maven.iml
 /.idea
 
+lockss/classes
+lockss/generated

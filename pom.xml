@@ -262,6 +262,19 @@
             <artifactId>xoai-service-provider</artifactId>
             <version>4.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>net.sourceforge.javacsv</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <!--nasty hack to make javadoc code compile in Intellij http://stackoverflow.com/a/2355296/53897-->
+        <dependency>
+            <groupId>sun.jdk</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.7.0</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -295,6 +308,7 @@
                         <configuration>
                             <sources>
                                 <source>DISABLEDlockss/test/src</source>
+                                <source>lockss/tools/src</source>
                             </sources>
                         </configuration>
                     </execution>
