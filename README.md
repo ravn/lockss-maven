@@ -1,9 +1,10 @@
 # lockss-maven
 
-NOTE: This is _not_ finished work!  It is just enough to make it
-possible to use IntelliJ IDEA better with sources as it can derive
-much more automatically from Maven POM files than from Ant build
-files.  Antlr G4 files are processed correctly.
+IMPORTANT: THIS IS _NOT_ FINISHED WORK!  
+
+It is just enough to make it possible to use IntelliJ IDEA better with sources
+as it can derive much more automatically from Maven POM files than from Ant
+build files.  Antlr G4 files are processed correctly.
 
 A few dependencies could not be found as-is in Maven Central.  Use
 
@@ -19,11 +20,15 @@ A few dependencies could not be found as-is in Maven Central.  Use
 
 to install them to your local repository.
 
-An Oracle 1.7 JDK or OpenJDK 1.7 is required (not JRE).  IBM 1.7 will not work with
-the current keystore code.
+An Oracle 1.7 JDK or OpenJDK 1.7 is required (not JRE).  IBM 1.7 will not work
+with the current keystore code.  For Ubuntu 15.04 this is easiest done by first
+installing openjdk-7-jdk and then setting JAVA_HOME:
 
-Note: The antlr *.g4 files are explicitly pointed to to avoid emitting
-a package line in addition to the one already present in the template.
+    export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+
+
+Note: The antlr *.g4 files are explicitly pointed to to avoid emitting a
+package line in addition to the one already present in the template.
 
 Note: To update the lockss submodule, enter it and do
 
@@ -33,4 +38,4 @@ Note: To update the lockss submodule, enter it and do
     cd ..
     git push
 
-/tra 2015-07-03
+/tra 2015-07-09
